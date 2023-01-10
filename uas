@@ -59,22 +59,25 @@ vector<double> operator*(vector<double> a, vector<double> b)
 
 double pearsoncoeff(vector<double> X, vector<double> Y)
 {
-	return sum((X - mean(X))*(Y - mean(Y))) / (X.size()*stdev(X)* stdev(Y));
+	return sum((X - mean(X))(Y - mean(Y))) / (X.size()*stdev(X) stdev(Y));
 }
 
 int main() {
-	/* Enter your code here. Read input from STDIN. Print output to STDOUT */
+	
 	int N;
+	cout << "Masukkan nilai : ";
 	cin >> N;
 	vector<double> X(N);
 	vector<double> Y(N);
 
 	for (int i = 0; i < X.size() ; i++)
 	{
+		cout << "nilai x-" << i << ": ";
 		cin >> X[i];
 	}
 	for (int i = 0; i < Y.size(); i++)
 	{
+		cout << "nilai y-" << i << ": ";
 		cin >> Y[i];
 	}
 
